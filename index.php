@@ -27,6 +27,27 @@
     input[type=number] {
     -moz-appearance: textfield;
     }
+
+    .custom-bg{
+        background-color: #2ec1ac;
+    }
+    .custom-bg:hover{
+        background-color: #279e8c;
+    }
+
+    .availability-form{
+        margin-top: -50px;
+        z-index: 2;
+        position: relative;
+    }
+
+    @media screen and (max-width: 575px) {
+        .availability-form {
+            margin-top: 0px;
+            padding: 0 35px;
+        }
+    }
+
     </style>
 </head>
 <body class="bg-light">
@@ -187,6 +208,50 @@
             </div>
         </div>
     </div>
+
+    <!-- check availability form -->
+
+    <div class="container availability-form">
+        <div class="row">
+            <div class="col-lg-12 bg-white shadow p-4 rounded">
+                <h5 class="mb-4">Check Booking Availability</h5>
+                <form>
+                    <div class="row align-items-end">
+                        <div class="col-lg-3 mb-3">
+                            <label class="form-label" style="font-weight: 500;">Check-in</label>
+                            <input type="date" class="form-control shadow-none">
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <label class="form-label" style="font-weight: 500;">Check-out</label>
+                            <input type="date" class="form-control shadow-none">
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <label class="form-label" style="font-weight: 500;">Adult</label>
+                            <select class="form-select shadow-none">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 mb-3">
+                            <label class="form-label" style="font-weight: 500;">Children</label>
+                            <select class="form-select shadow-none">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1 mb-lg-3 mt-2">
+                            <button type="submit" class="btn text-white shadow-none custom-bg">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<br><br><br>
+<br><br><br>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
