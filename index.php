@@ -99,7 +99,7 @@
 
     <!-- Our Rooms -->
 
-    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Phòng nghỉ</h2>
+    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Phòng của chúng tôi</h2>
 
     <div class="container">
         <div class="row">
@@ -109,6 +109,7 @@
                     <div class="card-body">
                         <h5>Mays Hotel Inn Saigon</h5>
                         <h6 class="mb-4">VND 1.624.320 2 đêm</h6>
+                        
                         <div class="features mb-4">
                             <h6 class="mb-1">Tính năng</h6>
                             <span class="badge rounded-pill bg-light text-dark text-wrap">
