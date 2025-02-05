@@ -16,10 +16,10 @@ input[type=number] {
 }
 
 .custom-bg{
-    background-color: #2ec1ac;
-    border: 1px solid #2ec1ac;
+    background-color: #003b95;
+    border: 1px solid #003b95;
 }
 .custom-bg:hover{
-    background-color: #279e8c;
-    border-color: #279e8c;
+    background-color: #003b95;
+    border-color: #003b95;
 }
