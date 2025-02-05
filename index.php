@@ -139,58 +139,13 @@
                                 Máy sưởi ấm 
                             </span>
                         </div>
-                        <div class="rating mb-4">
-                            <h6 class="mb-1">Đánh giá</h6>
-                            <span class="badge rounded-pill bg-light">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>    
-                            </span>
-                        </div>
-                        <div class="d-flex justify-content-evenly mb-2">
-                            <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Đặt Ngay</a>
-                            <a href="#" class="btn btn-sm btn-outline-dark shadow-none">Chi tiết thêm</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-                    <img src="images/rooms/1.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Mays Hotel Inn Saigon</h5>
-                        <h6 class="mb-4">VND 1.624.320 2 đêm</h6>
-                        <div class="features mb-4">
-                            <h6 class="mb-1">Tính năng</h6>
+                        <div class="guest mb-4">
+                            <h6 class="mb-1">Khách</h6>
                             <span class="badge rounded-pill bg-light text-dark text-wrap">
-                                2 Phòng
+                                5 Người lớn
                             </span>
                             <span class="badge rounded-pill bg-light text-dark text-wrap">
-                                1 phòng tắm
-                            </span>
-                            <span class="badge rounded-pill bg-light text-dark text-wrap">
-                                1 Ban công
-                            </span>
-                            <span class="badge rounded-pill bg-light text-dark text-wrap">
-                                3 Ghế sofa
-                            </span>
-                        </div>
-                        <div class="facilities mb-4">
-                            <h6 class="mb-1">Tiện ích</h6>
-                            <span class="badge rounded-pill bg-light text-dark text-wrap">
-                                Wifi
-                            </span>
-                            <span class="badge rounded-pill bg-light text-dark text-wrap">
-                                Tivi
-                            </span>
-                            <span class="badge rounded-pill bg-light text-dark text-wrap">
-                                Điều hòa
-                            </span>
-                            <span class="badge rounded-pill bg-light text-dark text-wrap">
-                                Máy sưởi ấm 
+                                4 Trẻ em
                             </span>
                         </div>
                         <div class="rating mb-4">
@@ -245,6 +200,78 @@
                             </span>
                             <span class="badge rounded-pill bg-light text-dark text-wrap">
                                 Máy sưởi ấm 
+                            </span>
+                        </div>
+                        <div class="guest mb-4">
+                            <h6 class="mb-1">Khách</h6>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                5 Người lớn
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                4 Trẻ em
+                            </span>
+                        </div>
+                        <div class="rating mb-4">
+                            <h6 class="mb-1">Đánh giá</h6>
+                            <span class="badge rounded-pill bg-light">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>    
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-evenly mb-2">
+                            <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Đặt Ngay</a>
+                            <a href="#" class="btn btn-sm btn-outline-dark shadow-none">Chi tiết thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+                    <img src="images/rooms/1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Mays Hotel Inn Saigon</h5>
+                        <h6 class="mb-4">VND 1.624.320 2 đêm</h6>
+                        <div class="features mb-4">
+                            <h6 class="mb-1">Tính năng</h6>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                2 Phòng
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                1 phòng tắm
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                1 Ban công
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                3 Ghế sofa
+                            </span>
+                        </div>
+                        <div class="facilities mb-4">
+                            <h6 class="mb-1">Tiện ích</h6>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                Wifi
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                Tivi
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                Điều hòa
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                Máy sưởi ấm 
+                            </span>
+                        </div>
+                        <div class="guest mb-4">
+                            <h6 class="mb-1">Khách</h6>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                5 Người lớn
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                4 Trẻ em
                             </span>
                         </div>
                         <div class="rating mb-4">
@@ -382,6 +409,7 @@
             <div class="col-lg-8 col-md-8 p-4 mb-lg-0 mb-3 bg-white rounded">
                 <iframe class="w-100 rounded" height="320px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501572.381242891!2d106.49971724596662!3d10.846912068257899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eefdb25d923%3A0x4bcf54ddca2b7214!2zSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1738695083688!5m2!1svi!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            
             <div class="col-lg-4 col-md-4">
                 <div class="bg-white p-4 rounded mb-4">
                     <h5>Call us</h5>
@@ -393,6 +421,7 @@
                         <i class="bi bi-telephone-fill"></i> +84 0798886942
                     </a>
                 </div>
+
                 <div class="bg-white p-4 rounded mb-4">
                     <h5>Follow us</h5>
                     <a href="" class="d-inline-block mb-3">
