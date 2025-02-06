@@ -42,7 +42,7 @@ input[type=number] {
 .custom-bg{
     background-color: var(--teal);
     border: 1px solid var(--teal);
-    width: 75px;
+    width: 87px;
 }
 .custom-bg:hover{
     background-color: var(--teal_hover);
