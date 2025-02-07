@@ -16,9 +16,14 @@
 </head>
 <body class="bg-white">
     
-    <div class="container-fluid bg-dark text-light p-3 d-flex align-items-center justify-content-between">
-        <h3 class="mb-0">TRANG QUẢN LÝ KHÁCH SẠN</h3>
-        <a href="logout.php" class="btn btn-light btn-sm">THOÁT</a>
+    <?php require('inc/header.php') ?>
+
+    <div class="container-fluid" id="main-content">
+        <div class="row">
+            <div class="col-lg-10 ms-auto p-4 overflow-hidden">
+
+            </div>
+        </div>
     </div>
 
 

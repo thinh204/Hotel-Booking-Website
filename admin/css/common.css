@@ -57,6 +57,26 @@ input[type=number] {
 
 .custom-alert {
     position: fixed;
-    top: 25px;
+    top: 75px;
     right: 25px;
+}
+
+#dashboard-menu {
+    position: fixed;
+    height: 100%;
+    background-color: #003b95 !important;
+}
+
+
+@media screen and (max-width: 991px) {
+    #dashboard-menu {
+        position: fixed;
+        height: auto;
+        background-color: #003b95 !important;
+        width: 100%;
+    }
+    #main-content {
+        margin-top: 60px;
+
+    }
 }
