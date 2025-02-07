@@ -65,6 +65,7 @@ input[type=number] {
     position: fixed;
     height: 100%;
     background-color: #003b95 !important;
+    z-index: 11;
 }
 
 

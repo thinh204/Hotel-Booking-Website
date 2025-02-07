@@ -26,12 +26,11 @@
     {
         global $con; 
 
-        if (!$con) {
-            die("Database connection failed: " . mysqli_connect_error());
-        }
-
         if ($stmt = mysqli_prepare($con, $sql)) {
+            // Bind parameters
             mysqli_stmt_bind_param($stmt, $datatypes, ...$values);
+            
+            // Execute the statement
             if (mysqli_stmt_execute($stmt)) {
                 return mysqli_stmt_get_result($stmt);
             } else {
