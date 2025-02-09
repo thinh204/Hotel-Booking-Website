@@ -212,7 +212,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" onclick="site_title.value = general_data.site_title, site_about.value = general_data.site_about" class="btn text-secondary shadow-none" data-bs-dismiss="modal">Hủy</button>
+                                    <button type="button" onclick="contacts_inp(contacts_data" class="btn text-secondary shadow-none" data-bs-dismiss="modal">Hủy</button>
                                     <button type="submit" class="btn custom-bg text-white shadow-none">Lưu</button>
                                 </div>
                             </div>
@@ -231,6 +231,8 @@
         let general_s_form = document.getElementById('general_s_form');
         let site_title_inp = document.getElementById('site_title_inp');
         let site_about_inp = document.getElementById('site_about_inp');
+
+        let contacts_s_form = document.getElementById('contacts_s_form');
 
         function get_general()
         {
@@ -279,7 +281,7 @@
         general_s_form.addEventListener('submit', function(e){
             e.preventDefault();
             upd_general(site_title_inp.value, site_about_inp.value);
-        })
+        });
 
         function upd_general(site_title_val, site_about_val) 
         {   
@@ -362,8 +364,51 @@
 
             }
         }
-        
 
+        contacts_s_form.addEventListener('submit',function(e){
+            e.preventDefault();
+            upd_contacts()
+        });
+
+        function upd_contacts()
+        {
+            let index = ['address','gmap','phone1','phone2','email','fb','ig','tw','iframe'];
+            let contacts_inp_id = ['address_inp','gmap_inp','phone1_inp','phone2_inp','email_inp','fb_inp','ig_inp','tw_inp','iframe_inp'];
+
+            let data_str = "";
+
+            for (i=0;i<index.length;i++) {
+                data_str += index[i] + "=" + document.getElementById(contacts_inp_id[i]).value + '&';
+            }
+            data_str += "upd_contacts";
+
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", "ajax/settings_crud.php", true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function() {
+
+                var myModal = document.getElementById('contacts-s');
+                var modal = bootstrap.Modal.getInstance(myModal);
+                modal.hide();
+
+                if(this.responseText == 1)
+                {
+                    alert('success','Changes saved!');
+                    get_contacts();
+                }
+                else 
+                {
+                    alert('error','No changes made!');
+                }   
+                get_general();
+            }; 
+
+            xhr.send(data_str);
+
+
+        }
+        
         window.onload = function() {
             get_general();
             get_contacts();
