@@ -188,6 +188,7 @@
                                 3 Ghế sofa
                             </span>
                         </div>
+                        
                         <div class="facilities mb-4">
                             <h6 class="mb-1">Tiện ích</h6>
                             <span class="badge rounded-pill bg-light text-dark text-wrap">
