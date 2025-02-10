@@ -25,35 +25,48 @@
             <div class="col-lg-6 col-md-6 mb-5 px=4">
 
                 <div class="bg-white rounded shadow p-4">
-                    <iframe class="w-100 rounded mb-4" height="320px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501572.381242891!2d106.49971724596662!3d10.846912068257899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eefdb25d923%3A0x4bcf54ddca2b7214!2zSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1738695083688!5m2!1svi!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="w-100 rounded mb-4" height="320px" src="<?php echo $contact_r['iframe'] ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     
                     <h5>Địa chỉ</h5>
-                    <a href="https://maps.app.goo.gl/JxVbzomdcoTM8yjVA" target="_blank" class="d-inline-block text-decoration-none text-dark mb-2">
-                        <i class="bi bi-geo-alt-fill"></i> 189/18/2, Hoàng Hoa Thám, Phường 6, Quận Bình Thạnh TP.HCM
+                    <a href="<?php echo $contact_r['gmap'] ?>" target="_blank" class="d-inline-block text-decoration-none text-dark mb-2">
+                        <i class="bi bi-geo-alt-fill"></i> <?php echo $contact_r['address'] ?>
                     </a>
 
                     <h5 class="mt-4">Điện thoại</h5>
-                    <a href="tel: +84 0798886942" class="d-inline-block mb-2 text-decoration-none text-dark">
-                        <i class="bi bi-telephone-fill"></i> +84 0798886942
+                    <a href="tel: +<?php echo $contact_r['phone1'] ?>" class="d-inline-block mb-2 text-decoration-none text-dark">
+                        <i class="bi bi-telephone-fill"></i> +<?php echo $contact_r['phone1'] ?>
                     </a>
                     <br>
-                    <a href="tel: +84 0798886942" class="d-inline-block text-decoration-none text-dark">
-                        <i class="bi bi-telephone-fill"></i> +84 0944840568
-                    </a>
-
+                    <?php
+                        if($contact_r['phone2']!='') {
+                            echo<<<data
+                                <a href="tel: +$contact_r[phone2]" class="d-inline-block text-decoration-none text-dark">
+                                    <i class="bi bi-telephone-fill"></i> +$contact_r[phone2]
+                                </a>
+                            data;
+                        }
+                    ?>
+                    
                     <h5 class="mt-4">Địa chỉ email</h5>
-                    <a href="mailto: huythinh592@gmail.com" class="d-inline-block text-decoration-none text-dark">
-                        <i class="bi bi-envelope-fill"></i> huythinh592@gmail.com
+                    <a href="mailto: <?php echo $contact_r['email'] ?>" class="d-inline-block text-decoration-none text-dark">
+                        <i class="bi bi-envelope-fill"></i> <?php echo $contact_r['email'] ?>
                     </a>
 
                     <h5 class="mt-4">Theo dõi chúng tôi</h5>
-                    <a href="" class="d-inline-block text-dark fs-5 me-2">
-                        <i class="bi bi-twitter me-1"></i>
-                    </a>
-                    <a href="" class="d-inline-block text-dark fs-5 me-2">
+                    <?php
+                        if($contact_r['tw']!='') {
+                            echo<<<data
+                                <a href="$contact_r[tw]" class="d-inline-block text-dark fs-5 me-2">
+                                    <i class="bi bi-twitter me-1"></i>
+                                </a>
+                            data;
+                        }
+                    ?>
+                    
+                    <a href="<?php echo $contact_r['fb'] ?>" class="d-inline-block text-dark fs-5 me-2">
                         <i class="bi bi-facebook me-1"></i>
                     </a>
-                    <a href="" class="d-inline-block text-dark fs-5">
+                    <a href="<?php echo $contact_r['ig'] ?>" class="d-inline-block text-dark fs-5">
                         <i class="bi bi-instagram me-1"></i> 
                     </a>
                 </div>

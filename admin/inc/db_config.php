@@ -15,8 +15,8 @@
         foreach ($data as $key => $value) {
             $value = trim($value);
             $value = stripslashes($value);
-            $value = htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
             $value = strip_tags($value);
+            $value = htmlspecialchars($value);
             $data[$key] = $value;
         }
         return $data;

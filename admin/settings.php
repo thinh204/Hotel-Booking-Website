@@ -175,11 +175,11 @@
                                                     <label class="form-label fw-bold">Số Điện Thoại (with country code)</label>
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-                                                        <input type="text" name="phone1" id="phone1_inp" class="form-control shadow-none" required>
+                                                        <input type="number" name="phone1" id="phone1_inp" class="form-control shadow-none" required>
                                                     </div>
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-                                                        <input type="text" name="phone2" id="phone2_inp" class="form-control shadow-none">
+                                                        <input type="number" name="phone2" id="phone2_inp" class="form-control shadow-none">
                                                     </div>
                                                 </div>
                                                 <div class="mb-3">
@@ -266,12 +266,9 @@
                         </form>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
-
 
     <?php require('inc/scripts.php'); ?>
     <script>
