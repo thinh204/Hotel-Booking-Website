@@ -1,3 +1,6 @@
+    
+    
+    
     <div class="navbar container-fluid text-light p-3 d-flex align-items-center justify-content-between sticky-top">
         <h3 class="mb-0 h-font">Hotel Hopper</h3>
         <a href="logout.php" class="btn btn-light btn-sm">THOÁT</a>
