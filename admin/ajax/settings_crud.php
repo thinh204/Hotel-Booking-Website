@@ -88,7 +88,6 @@
         } 
     }
     
-
     if(isset($_POST['get_members']))
     {
         $res = selectAll('team_details');

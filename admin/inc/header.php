@@ -19,10 +19,10 @@
                             <a class="nav-link text-white" href="dashboard.php">Bảng Điều Khiển</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Phòng</a>
+                            <a class="nav-link text-white" href="rooms.php">Phòng</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Người Dùng</a>
+                            <a class="nav-link text-white" href="users.php">Người Dùng</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="settings.php">Tùy Chỉnh</a>
