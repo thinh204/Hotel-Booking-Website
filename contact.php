@@ -73,30 +73,50 @@
             </div>
             <div class="col-lg-6 col-md-6 px=4">
                 <div class="bg-white rounded shadow p-4">
-                    <form>
+                    <form method="POST">
                         <h5>Gửi đánh giá</h5>
                         <div class="mt-3">
                             <label class="form-label" style="font-weight: 500;">Họ tên</label>
-                            <input type="text" class="form-control shadow-none">
+                            <input name="name" required type="text" class="form-control shadow-none">
                         </div>
                         <div class="mt-3">
                             <label class="form-label" style="font-weight: 500;">Địa chỉ email</label>
-                            <input type="email" class="form-control shadow-none">
+                            <input name="email" required class="form-control shadow-none">
                         </div>
                         <div class="mt-3">
                             <label class="form-label" style="font-weight: 500;">Mời bạn chia sẻ thêm cảm nhận...</label>
-                            <input type="text" class="form-control shadow-none">
+                            <input name="subject" required class="form-control shadow-none">
                         </div>
                         <div class="mt-3">
                             <label class="form-label" style="font-weight: 500;">Phản hồi</label>
-                            <textarea class="form-control shadow-none" rows="5" style="resize: none;"></textarea>
+                            <textarea  name="message" required class="form-control shadow-none" rows="5" style="resize: none;"></textarea>
                         </div>
-                        <button type="submit" class="btn text-white custom-bg mt-3">GỬI</button>
+                        <button type="submit" name="send" class="btn text-white custom-bg mt-3">GỬI</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <?php
+        
+        if(isset($_POST['send']))
+        {
+            $frm_data = filteration($_POST);
+
+            $q = "INSERT INTO `user_queries`(`name`, `email`, `subject`, `message`) VALUES (?,?,?,?)";
+            $values = [$frm_data['name'],$frm_data['email'],$frm_data['subject'],$frm_data['message']];
+
+            $res = insert($q,$values,'ssss');
+            if($res==1) {
+                alert('success', 'Mail sent!');
+            }
+            else {
+                alert('error', 'Server Down! Try again later.');
+            }
+        }
+
+    ?>
 
     <!-- Footer Design -->
 

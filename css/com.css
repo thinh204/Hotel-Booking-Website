@@ -54,3 +54,9 @@ input[type=number] {
     margin: 0 auto;
     height: 1.7px;
 }
+
+.custom-alert {
+    position: fixed;
+    top: 75px;
+    right: 25px;
+}
