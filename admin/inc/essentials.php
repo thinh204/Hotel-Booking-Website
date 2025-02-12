@@ -2,9 +2,11 @@
 
     define('SITE_URL', 'http://127.0.0.1/Hotel_Booking_Website/');
     define('ABOUT_IMG_PATH',SITE_URL . 'images/about/');
+    define('CAROUSEL_IMG_PATH',SITE_URL . 'images/carousel/');
 
     define('UPLOAD_IMAGE_PATH',$_SERVER['DOCUMENT_ROOT'] . '/Hotel_Booking_Website/images/');
     define('ABOUT_FOLDER', 'about/');
+    define('CAROUSEL_FOLDER', 'carousel/');
 
     function adminLogin() 
     {
@@ -17,7 +19,8 @@
         }
     }
 
-    function redirect($url) {
+    function redirect($url) 
+    {
         if (!headers_sent()) {
             header("Location: $url");
             exit;
@@ -29,7 +32,8 @@
         }
     }
 
-    function alert($type, $msg) {
+    function alert($type, $msg) 
+    {
         $bs_class = match ($type) {
             "success" => "alert-success",
             "error"   => "alert-danger",
