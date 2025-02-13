@@ -15,7 +15,8 @@
     }
 
     function remAlert(){
-        document.getElementsByClassName('alert')[0].remove();
+        let alertBox = document.querySelector('.alert');
+    if (alertBox) alertBox.remove();
     }
 
     function setActive()
