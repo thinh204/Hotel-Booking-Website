@@ -19,6 +19,9 @@
                             <a class="nav-link text-white" href="dashboard.php">Bảng Điều Khiển</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-white" href="features_facilities.php">Tinh Năng & Tiện Ích</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-white" href="user_queries.php">Thông Tin Người Dùng</a>
                         </li>
                         <li class="nav-item">
